@@ -5,7 +5,8 @@ services:
 
 before_install:
   - uname -a
+  - lsb_release -a
   - docker pull ros:indigo-robot
 
 script:
-  - docker run ros:indigo-robot /bin/bash
+  - docker run ros:indigo-robot /bin/bash -c "ls -al"
