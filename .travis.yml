@@ -1,12 +1,13 @@
 sudo: required
 
-services:
-  - docker
+#services:
+#  - docker
 
 before_install:
   - uname -a
   - lsb_release -a
-  - docker pull ros:indigo-robot
+#  - docker pull ros:indigo-robot
 
 script:
-  - docker run ros:indigo-robot /bin/bash -c "ls -al"
+  - ls -al
+#  - docker run ros:indigo-robot /bin/bash -c "ls -al"
